@@ -21,7 +21,7 @@ header {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     
 }
 
@@ -95,9 +95,10 @@ p {
 .flex-container {
     margin-top: 10rem;
     display: flex;
+    flex-basis:  0;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .flex-container img {
@@ -127,14 +128,14 @@ p {
 
 .clipboard img {
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     width: 80%;
     height: auto;
 }
 
 .text_box {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -159,13 +160,13 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 
 }
 
 .last-text_box {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .last-text_box p {
@@ -210,9 +211,15 @@ footer  {
 }
 
 @media screen  and (max-width:500px) {
+
+    .buttons{
+        padding:2rem;
+    }
+
     .buttons a{
         display: block;
         margin-bottom:2rem;
+        margin-left:0;
     }
 
     .flex-container {
@@ -220,8 +227,24 @@ footer  {
         align-content: center;
     }
 
+    .flex-text_box {
+        margin-left:3rem;
+    }
+
+    .flex-container-2 {
+        margin-left:4rem;
+    }
+
     .flex-container-2 div {
         margin-bottom: 3rem;
+    }
+
+    .company-logo {
+        flex-direction:column;
+        align-content:space-between;
+        justify-content:center;
+        align-items:center;
+        margin-left:6rem;
     }
 
     .company-logo div{
@@ -230,21 +253,40 @@ footer  {
     }
 
     footer {
+        padding:0;
+        margin:0;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
+        align-items:center;
+        justify-content:center;
+        align-content:space-evenly;
     }
 
     .footer-links {
         flex-direction: column;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        align-content:space-evenly;
     }
 
+    .footer-links a{
+        margin-left:0;
+        text-align:center;
+    }
+
+ 
+
     .footer-logo{
+        
         text-align: center;
         margin-bottom: 2rem;
         
     }
+
+    .footer-logo img {
+        margin-top:1rem;
+    }
+
+    
 }
     
